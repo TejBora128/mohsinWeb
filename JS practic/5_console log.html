@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			console.clear();
+			console.log("We are in console...!");
+
+			console.error("We are in console Error..!");
+			console.warn("We are in console Warning..!");
+			console.info("We are in console Warning..!");
+
+			console.log("%c We are in console...!", "color:green");
+			console.log("%c We are in console...!", "text-shadow: 1px 1px 3px blue");
+			console.log("%c We are in console...!", "font-size: 30px");
+
+			var sNames = ["Ali", "Sai", "Jo", "Alex"];
+			console.log("sNames", sNames);
+			console.table(sNames);
+
+			var sInfo = {
+				name: "Alex",
+				rNo: 20,
+				city: "Mumbai"
+			};
+			console.log("TCL: sInfo", sInfo);
+			console.table(sInfo);
+
+			var sdata = [
+				{
+					name: "Ali",
+					age: 22,
+					rNo: 101
+				},
+				{
+					name: "Alex",
+					age: 23,
+					rNo: 102
+				},
+				{
+					name: "Azhar",
+					age: 24,
+					rNo: 103
+				}
+			];
+			console.log("TCL: sdata", sdata);
+			console.table("TCL: sdata", sdata);
+		</script>
+	</body>
+</html>
