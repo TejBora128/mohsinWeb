@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1 id="demo">hello</h1>
+		<p id="para">
+			Lorem ipsum dolor <mark> ABCD</mark> sit amet consectetur adipisicing
+			elit. Dolorem culpa neque vitae fugiat odio, tenetur dicta, vel veniam
+			dolorum impedit quos eaque necessitatibus accusamus iure voluptatum
+			consectetur nobis iusto. Saepe?
+		</p>
+		<h1>hi</h1>
+
+		<img src="../img/img1.jpg" width="400" id="img" />
+		<script>
+			var myImg = document.getElementById("img").src;
+			console.log("TCL: myImg", myImg);
+			var myImg = (document.getElementById("img").src = "../img/img3.jpg");
+			console.log("TCL: myImg", myImg);
+
+			// var x = document.getElementById("demo").innerHTML;
+			// var y = (document.getElementById("para").innerHTML = "my stat");
+			// console.log(" y", y);
+			// console.log("document.getElementById('demo')", x);
+		</script>
+	</body>
+</html>
